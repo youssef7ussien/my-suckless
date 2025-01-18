@@ -334,6 +334,7 @@ applyrules(Client *c)
 				c->mon = m;
 
 			if (r->switchtag) {
+				unfocus(selmon->sel, 1);
 				selmon = c->mon;
 				if (r->switchtag == 2 || r->switchtag == 4)
 					newtagset = c->mon->tagset[c->mon->seltags] ^ c->tags;
