@@ -30,15 +30,15 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 *  WM_WINDOW_ROLE(STRING) = role
 	 */
-	/* class                  role        instance    title           tags mask    iscentered     switchtag    isfloating   monitor */
+	/* class                  role          instance          title       tags mask    iscentered     switchtag    isfloating   monitor */
 	{ "center-float",         NULL,         NULL,             NULL,       0,           1,             0,           1,          -1 },
 	{ NULL,                   NULL,         "center-float",   NULL,       0,           1,             0,           1,          -1 },
 	{ "nocenter-float",       NULL,         NULL,             NULL,       0,           0,             0,           1,          -1 },
-	{ "LibreWolf",            "browser",    NULL,             NULL,       1,           0,             1,           0,           1 },
-	{ "LibreWolf",            NULL,         "Devtools",       NULL,       0,           1,             0,           1,          -1 },
-	{ "LibreWolf",            NULL,         "Toolkit",        NULL,       0,           1,             0,           1,          -1 },
-	{ "LibreWolf",            "page-info",  NULL,             NULL,       0,           1,             0,           1,          -1 },
-	{ "LibreWolf",            NULL,         "Places",         NULL,       0,           1,             0,           1,          -1 },
+	{ "librewolf",            "browser",    NULL,             NULL,       1,           0,             1,           0,           1 },
+	{ "librewolf",            NULL,         "Devtools",       NULL,       0,           1,             0,           1,          -1 },
+	{ "librewolf",            NULL,         "Toolkit",        NULL,       0,           1,             0,           1,          -1 },
+	{ "librewolf",            "page-info",  NULL,             NULL,       0,           1,             0,           1,          -1 },
+	{ "librewolf",            NULL,         "Places",         NULL,       0,           1,             0,           1,          -1 },
 	{ "jetbrains-studio",     NULL,         NULL,             NULL,       1 << 1,      0,             0,           0,          -1 },
 	{ "jetbrains-idea",       NULL,         NULL,             NULL,       1 << 1,      0,             0,           0,          -1 },
 	{ "VSCodium",             NULL,         NULL,             NULL,       1 << 2,      0,             0,           0,          -1 },
